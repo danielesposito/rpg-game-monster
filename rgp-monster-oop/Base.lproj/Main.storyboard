@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rgp_monster_oop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="QCL-HX-nAc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="mgY-er-Iou">
+                                <rect key="frame" x="0.0" y="510" width="416" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="416" id="bey-Zf-Red"/>
+                                    <constraint firstAttribute="height" constant="90" id="wtk-Mh-5nK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-Bc-FQG">
+                                <rect key="frame" x="408" y="510" width="416" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="SUN-8V-cW9"/>
+                                    <constraint firstAttribute="width" constant="416" id="jbF-xm-AlS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="roo-Vi-b0v">
+                                <rect key="frame" x="45" y="317" width="146" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Jkq-7c-lQO"/>
+                                    <constraint firstAttribute="height" constant="194" id="PQj-IN-1rn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enem1" translatesAutoresizingMaskIntoConstraints="NO" id="Zf3-OD-G45">
+                                <rect key="frame" x="398" y="371" width="166" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="330-ew-qpk"/>
+                                    <constraint firstAttribute="width" constant="166" id="ddW-ha-tuE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="print" translatesAutoresizingMaskIntoConstraints="NO" id="RBy-Lv-9vO">
+                                <rect key="frame" x="139" y="74" width="323" height="48"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QCL-HX-nAc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2cX-JL-lUw"/>
+                            <constraint firstItem="mgY-er-Iou" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8MR-PR-ePA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mgY-er-Iou" secondAttribute="bottom" id="OmQ-53-gBG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QCL-HX-nAc" secondAttribute="bottom" id="QgH-gA-Otj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mgY-er-Iou" secondAttribute="bottom" id="YQ1-lF-6gV"/>
+                            <constraint firstAttribute="trailing" secondItem="QCL-HX-nAc" secondAttribute="trailing" id="gW7-iQ-Puk"/>
+                            <constraint firstItem="L5h-Bc-FQG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="408" id="hhX-NM-nbk"/>
+                            <constraint firstAttribute="trailing" secondItem="Zf3-OD-G45" secondAttribute="trailing" constant="36" id="j8Z-iC-Llj"/>
+                            <constraint firstItem="QCL-HX-nAc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jij-oT-vMC"/>
+                            <constraint firstItem="L5h-Bc-FQG" firstAttribute="top" secondItem="Zf3-OD-G45" secondAttribute="bottom" id="lBc-ZP-2Cp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L5h-Bc-FQG" secondAttribute="bottom" id="lGo-ng-0oL"/>
+                            <constraint firstItem="mgY-er-Iou" firstAttribute="top" secondItem="roo-Vi-b0v" secondAttribute="bottom" constant="-1" id="nSU-xH-8Jt"/>
+                            <constraint firstItem="mgY-er-Iou" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qpw-ck-S0i"/>
+                            <constraint firstItem="roo-Vi-b0v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="45" id="smb-aX-pXa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="325" y="315"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="768" height="1024"/>
+        <image name="enem1" width="574" height="487"/>
+        <image name="ground" width="768" height="164"/>
+        <image name="player" width="356" height="475"/>
+        <image name="print" width="550" height="83"/>
+    </resources>
 </document>
