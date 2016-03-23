@@ -66,13 +66,13 @@
 			children = (
 				5B1353551CA23E610006F54F /* AppDelegate.swift */,
 				5B1353571CA23E610006F54F /* ViewController.swift */,
+				5B1353591CA23E610006F54F /* Main.storyboard */,
+				5B13535C1CA23E610006F54F /* Assets.xcassets */,
 				5B1353671CA23F750006F54F /* Character.swift */,
 				5B13536D1CA2654F0006F54F /* Kimara.swift */,
 				5B13536F1CA267190006F54F /* DevilWizard.swift */,
 				5B1353691CA241A50006F54F /* Player.swift */,
 				5B13536B1CA244C30006F54F /* Enemy.swift */,
-				5B1353591CA23E610006F54F /* Main.storyboard */,
-				5B13535C1CA23E610006F54F /* Assets.xcassets */,
 				5B13535E1CA23E610006F54F /* LaunchScreen.storyboard */,
 				5B1353611CA23E610006F54F /* Info.plist */,
 			);
